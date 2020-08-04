@@ -1,0 +1,8 @@
+---
+- name: Pull CentOS image
+  hosts: amazon
+  become: true
+  tasks:
+    - name: pull
+      docker_image:
+        name: centos
