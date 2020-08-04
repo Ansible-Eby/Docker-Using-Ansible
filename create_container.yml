@@ -1,0 +1,14 @@
+---
+- name: Create Container
+  hosts: amazon
+  become: true
+  tasks:
+    - name: Build Docker Container
+      docker_container:
+        name: webserver
+        image: webimage
+        state: started
+        ports:
+        - "8080:80"
+        tty: true
+        detach: true
