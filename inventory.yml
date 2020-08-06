@@ -1,2 +1,2 @@
 [amazon]
-34.229.43.39 
+34.229.43.39 ansible_user=ec2-user
